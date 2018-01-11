@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script rel="stylesheet" src="js/jquery.js"></script>
-    <script rel="stylesheet" src="js/scripts.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="utf-8">
@@ -22,8 +22,49 @@
           <label for="email">Email:</label>
           <input id="email" class="form-control" type="text">
         </div>
-      </form>
       <h2>Questions:</h2>
+      <h6>Gender:</h6>
+      <select class="form-control" id="gender">
+        <option>Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <br>
+      <h6>Ice Cream Flavor:</h6>
+      <div class="radio">
+        <label>
+          <input type="radio" name="flavor" value="chocolate" checked>
+          Chocolate
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="flavor" value="chocolate">
+          Vanilla
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="flavor" value="moose track">
+          Moose Tracks
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="born">Date of Birth:</label>
+        <input id="born" class="form-control" type="date">
+      </div>
+      <div class="form-group">
+        <label for="color"> What is your favorite color? </label>
+        <input id="color" class="form-control" type="color">
+      </div>
+      <button type="submit" class="btn">SUBMIT</button>
+</form>
+
+      <div class="response">
+        <p> You're <span class="name"></span>, and you are a <span class="gender"></span>. You like <span class="flavor"></span>-flavored Ice Cream! Your birthday is <span class="dob"></span>!
+        </p>
+
+      </div>
     </div>
   </body>
 </html>
